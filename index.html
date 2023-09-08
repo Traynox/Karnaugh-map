@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Karnaugh map</title>
+</head>
+
+<body>
+    <div class="fondo">
+
+        <div class="bloqueTabla">
+            <table class="table">
+                <thead>
+                    <tr id="encabezadoTabla">
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+     
+            <div class="bloqueInteraciones">
+                <div class="componentes">
+                    <label for="variables" class="seleccionVariables" class="seleccionVariables">Cantidad variables</label>
+                    <select title="cantidad de variables" class="comboBox_Base" id="seleccionVariables"></select>
+                    
+                    <div class="btnContainer">
+                        <button class="btnGenerar" onclick="clickFuncion()">Generar</button>
+                        <button class="btnBorrar" onclick="limpiarVariables()">Limpiar</button>
+                    </div>
+                    
+                    <h1 class="resultado" id="resultado"></h1>
+                    
+                </div>
+                
+                
+                <div class="bloqueMapa" id="divMapa">
+                    <table class="table" id="tablemap">
+                        <thead>
+                            <tr id="encabezadoMapa">
+                                
+                            </tr>
+                            
+                        </thead>
+                        <tbody id="tbodyMapa">
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+    
+    </div>
+
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/logica.js"></script>
+<script type="text/javascript" src="js/crearMapa.js"></script>
+<script type="text/javascript" src="js/componentes.js"></script>
+
+</html>
